@@ -11,5 +11,9 @@ echo barname . "<br>";
 $duvel = new Beer('blond', 3.50, 'Duvel', 8.50);
 echo "<pre>";
 echo $duvel->servedBy(barname) ."<br>";
-echo $duvel->madeBy(barname);
+echo $duvel->madeBy(barname) ."<br>";
+
+$privateVal = Beverage::getAddress();
+echo $privateVal ."<br>";
+echo $duvel->getAddress();
 echo "</pre>";

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 class Beverage
 {
+    private static $address = "Melkmarkt 9, 2000 Antwerpen";
     private string $color;
     private float $price;
     private string $temperature;
@@ -23,6 +24,11 @@ class Beverage
     public function setColor(string $color)
     {
         $this->color = $color;
+    }
+
+    public static function getAddress() 
+    {
+        return self::$address;
     }
 
     public function getTemperature()
