@@ -5,12 +5,6 @@ declare(strict_types=1);
 require_once "Beverage.php";
 require_once "Beer.php";
 
-$cola = new Beverage('black', 2.00);
-echo "<pre>";
-    echo $cola->getInfo() ."<br>";
-    echo $cola->getTemperature();
-echo "</pre>";
-
 $duvel = new Beer('blond', 3.50, 'Duvel', 8.50);
 echo "<pre>";
 //echo $duvel->alcoholPercentage ."<br>";
@@ -23,4 +17,14 @@ echo "</pre>";
 
 $duvel->setColor("light");
 echo $duvel->getColor() ."<br>";
-echo $duvel->beerInfo();
+echo $duvel->getBeerInfo();
+
+/* EXERCISE 4
+
+Copy the code of exercise 2 to here and delete everything related to cola.
+
+TODO: Make all properties protected.
+TODO: Make all the other prints work without error without changing the beverage class.
+
+USE TYPEHINTING EVERYWHERE!
+*/

@@ -25,7 +25,12 @@ class Beer extends Beverage
         return $this->alcoholPercentage;
     }
 
-    public function beerInfo()
+    public function getBeerInfo()
+    {
+        return $this->beerInfo();
+    }
+
+    private function beerInfo()
     {
         return "Hi I'm $this->name and have an alcohol percentage of $this->alcoholPercentage and I have a ". $this->getColor() . " color.";
     }
