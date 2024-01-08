@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class beverage
+class Beverage
 {
     protected string $color;
     protected float $price;
