@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 class beverage
 {
-    private string $color;
-    private float $price;
-    private string $temperature;
+    protected string $color;
+    protected float $price;
+    protected string $temperature;
 
     public function __construct(string $color, float $price)
     {
